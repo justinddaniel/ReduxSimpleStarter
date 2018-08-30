@@ -3,12 +3,17 @@ import React, { Component } from 'react'; //import React, pull off property Comp
 
 class SearchBar extends Component {
   constructor(props) { //first and only function called when new instance of class created.
-    super(props); //calls parent method on parent class. 
+    super(props); //calls parent method on parent class.
 
-    this.state = { term: ''};
+    this.state = { term: ''}; //this.state used only inside constructor; everywhere else use this.setState
   }
     render() { //every React class must have a render method
-      return <input onChange = {event => console.log(event.target.value)} />;
+      return (
+        <div>
+          <input onChange = {event => this.setState({ term: event.target.value })} />
+          Value of the input: {this.state.term}
+        </div>
+      );
     }
 }
 
