@@ -13,6 +13,11 @@ YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
 //downwards data flow: only the most parent component should be responsible for fetching data.
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = { };
+	}
 	render() {
 		return  (
 			<div>
