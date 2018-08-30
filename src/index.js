@@ -11,8 +11,8 @@ const App = () => {
 	return  (
 		<div>
 			<SearchBar />
-		</div>;
-	)
+		</div>
+	);
 }
 
 //always use one component per file.
