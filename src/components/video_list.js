@@ -3,8 +3,8 @@ import React from 'react';
 const VideoList = (props) => {
   return (
     <ul className="col-md-4 list-group">
-    
-    </ul>
+      {props.videos.length}
+    </ul> //if this were a class component it would be this.props.videos
   );
 }
 

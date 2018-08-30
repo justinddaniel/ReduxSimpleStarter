@@ -27,8 +27,8 @@ class App extends Component {
 		return  (
 			<div>
 				<SearchBar />
-				<VideoList videos={this.state.videos} /> //passing props with videos (prop videos)
-			</div>
+				<VideoList videos={this.state.videos} />
+			</div> // passing props with videos (prop videos)
 		);
 	}
 }
