@@ -1,8 +1,13 @@
 import React from 'react';
 
 
-const SearchBar = () => {
-  return <input />; //returns React.createElement
+class SearchBar extends React.Component {
+    render() { //every React class must have a render method
+
+    }
 }
+
+
+//functional component => goes into a function: const SearchBar = () => { //etc.}
 
 export default SearchBar;
