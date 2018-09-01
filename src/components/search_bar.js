@@ -9,12 +9,17 @@ class SearchBar extends Component {
   }
     render() { //every React class must have a render method
       return (
-        <div>
+        <div className='search-bar'>
           <input
             value = {this.state.term} //converts it to controlled form element
-          onChange = {event => this.setState({ term: event.target.value })} />
+          onChange = {event => this.onInputChange(event.target.value)} />
         </div>
       );
+    }
+
+    onInputChange(term) {
+      this.setState({term});
+      this.props.onSearchTermChange(term);
     }
 }
 
